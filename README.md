@@ -1,2 +1,2 @@
 # insert_coin
-opdracht van gu
+opdracht van gui
