@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js"></script>
+    <title>Insert Coin - Contact</title>
+</head>
+
+<body class="contact-body">
+    <header><img src="img/logo.png" alt="Logo Insert Coin" id="logo"></header>
+
+    <nav class="navbar">
+        <div><a href="homepage.html">Home</a></div>
+        <div><a href="store.html">Store</a></div>
+        <div class="dropdown"><a href="#">Toernooi</a>
+            <div class="content">
+                <a href="tournament-info.html">Info</a>
+                <a href="tournament-heroes.html">Heroes</a>
+                <a href="tournament-teams.html">Teams</a>
+                <a href="tournament-planning.html">Planning</a>
+                <a href="tournament-register.html">Inschrijven</a>
+            </div>
+        </div>
+        <div class="dropdown"><a href="contact.html">Contact</a>
+            <div class="content">
+                <a href="faq.html">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <h1>Contact Opnemen</h1>
+        <h3>Naam:</h3>
+        <input type="text" placeholder="Typ je naam">
+
+        <h3>Email:</h3>
+        <input type="text" placeholder="Typ je email">
+
+        <h3>Reden:</h3>
+        <select class="reasonSelect">
+            <option>Bestelling</option>
+            <option>Inloggen</option>
+            <option>Feedback</option>
+            <option>Toernooi</option>
+            <option>Anders</option>
+        </select>
+
+        <h3>Opmerking:</h3>
+        <textarea id="commentBox"></textarea><br>
+
+        <button class="btnVerzenden" onclick="sendToContactSuccess()">Verstuur</button>
+
+    </div>
+
+    <div class="contact-container2">
+        <button class="btnVerzenden" onclick="sendToFAQ()">Veelgestelde Vragen</button>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js"></script>
+    <title>Insert Coin - Veelgestelde Vragen</title>
+</head>
+
+<body class="faq-body">
+    <header><img src="img/logo.png" alt="Logo Insert Coin" id="logo"></header>
+
+    <nav class="navbar">
+        <div><a href="homepage.html">Home</a></div>
+        <div><a href="store.html">Store</a></div>
+        <div class="dropdown"><a href="#">Toernooi</a>
+            <div class="content">
+                <a href="tournament-info.html">Info</a>
+                <a href="tournament-heroes.html">Heroes</a>
+                <a href="tournament-teams.html">Teams</a>
+                <a href="tournament-planning.html">Planning</a>
+                <a href="tournament-register.html">Inschrijven</a>
+            </div>
+        </div>
+        <div class="dropdown"><a href="contact.html">Contact</a>
+            <div class="content">
+                <a href="faq.html">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <h2 class="faq-header">Frequently Asked Questions</h2>
+    <div class="faq-container">
+        <button class="questionBtn" onclick="question1()">Hoe schrijf ik me in voor het toernooi?</button>
+        <div id="q1">Je kunt je <a id="register" href="tournament-register.html">hier</a> inschrijven.</div>
+
+        <button class="questionBtn" onclick="question2()">Moet ik betalen om me in te schrijven voor het toernooi?</button>
+        <div id="q2">Zowel het spel als het inschrijven voor het toernooi zijn helemaal
+        <span style="background-color: lightskyblue;">gratis</span></div>
+
+        <button class="questionBtn" onclick="question3()">Hoe lang duurt het om een antwoord te krijgen als ik contact heb opgenomen?</button>
+        <div id="q3">Als u contact hebt opgenomen duurt het ongeveer <span style="background-color: lightskyblue;">
+        2-3 werkdagen</span> totdat u een antwoord krijgt.</div>
+
+        <button class="questionBtn" onclick="question4()">Hoelang duurt het toernooi?</button>
+        <div id="q4">Dat is nog niet helemaal zeker, <span style="background-color: lightskyblue;">het kan wel 5 uur duren</span>.
+        </div>
+    </div>
+</body>
+
+</html>

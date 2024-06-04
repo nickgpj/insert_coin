@@ -1,0 +1,436 @@
+/* General */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: orange;
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    text-align: center;
+}
+
+#logo {
+    width: 120px;
+}
+
+.navbar {
+    grid-column: 1 / span 8;
+    grid-row: 2;
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+}
+
+.navbar a,
+.navbar:visited {
+    display: block;
+    height: 40px;
+    width: 150px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar a:hover,
+.content:hover {
+    background-color: rgb(52, 52, 52);
+}
+
+.dropdown {
+    margin-top: 1px;
+}
+
+.dropdown .content {
+    display: none;
+}
+
+.dropdown:hover .content {
+    display: block;
+    background-color: gray;
+    position: absolute;
+}
+
+#register:visited {
+    color: blue;
+}
+
+/* Home Page */
+.home-body {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 200px;
+    grid-template-rows: 60px 40px 10px 1fr;
+}
+
+.home-container {
+    grid-column: 2;
+    grid-row: 4;
+    text-align: left;
+}
+
+.home-container2 {
+    grid-column: 2;
+    grid-row: 4;
+    text-align: left;
+    margin-top: 300px;
+}
+
+#int-winkel {
+    grid-column: 3;
+    grid-row: 4;
+    height: 175px;
+}
+
+#ext-winkel {
+    grid-column: 3;
+    grid-row: 4;
+    height: 175px;
+    margin-left: 250px;
+    margin-top: 75px;
+}
+
+#overwatch-logo {
+    grid-column: 3;
+    grid-row: 4;
+    margin-top: 310px;
+    margin-left: 150px;
+    width: 250px;
+}
+
+
+/* Store Page */
+.store-body {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 60px 40px 10px 40px 10px 1fr 10px 40px 10px 1fr;
+}
+
+.games-header {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.games-container {
+    display: flex;
+    flex-direction: row;
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.store-game {
+    width: 150px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.btnKopen {
+    background-color: gray;
+    color: white;
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.console-header {
+    grid-column: 2;
+    grid-row: 7;
+}
+
+.console-container {
+    display: flex;
+    flex-direction: row;
+    grid-column: 2;
+    grid-row: 9;
+}
+
+.store-hardware {
+    width: 225px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+
+/* Heroes Page */
+.tournament-heroes-body {
+    display: grid;
+    grid-template-columns: 200px 1fr 10px 1fr 10px 1fr 200px;
+    grid-template-rows: 60px 40px 10px 40px 10px 1fr;
+}
+
+.tank-header {
+    grid-column: 2;
+    grid-row: 4;
+    margin-left: 10px;
+}
+
+.tank-container {
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.hero-img {
+    width: 80px;
+    margin: 15px;
+    padding: 0px;
+    cursor: pointer;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.dps-header {
+    grid-column: 3;
+    grid-row: 4;
+    margin-left: 15px;
+}
+
+.dps-container {
+    grid-column: 4;
+    grid-row: 6;
+}
+
+.support-header {
+    grid-column: 5;
+    grid-row: 4;
+    margin-left: 25px;
+}
+
+.support-container {
+    grid-column: 6;
+    grid-row: 6;
+}
+
+
+/* Tournament Info Page */
+.tournament-info-body {
+    display: grid;
+    grid-template-columns: 400px 1fr 400px;
+    grid-template-rows: 60px 40px 10px 40px repeat(3, 100px) 1fr;
+}
+
+.toernooi-header {
+    text-align: center;
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.team-container {
+    text-align: center;
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.versus-header {
+    text-align: center;
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.team-container2 {
+    text-align: center;
+    grid-column: 2;
+    grid-row: 7;
+}
+
+.info-container {
+    grid-column: 2;
+    grid-row: 8;
+}
+
+
+/* Tournament Teams Page */
+.tournament-teams-body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 60px 40px 10px repeat(2, 1fr);
+}
+
+.team-table,
+td {
+    border: 3px solid;
+}
+
+.team1-container {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.team2-container {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.team3-container {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.team4-container {
+    grid-column: 4;
+    grid-row: 4;
+}
+
+.team5-container {
+    grid-column: 5;
+    grid-row: 4;
+}
+
+.team6-container {
+    grid-column: 6;
+    grid-row: 4;
+}
+
+.team7-container {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.team8-container {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.team9-container {
+    grid-column: 3;
+    grid-row: 5;
+}
+
+.team10-container {
+    grid-column: 4;
+    grid-row: 5;
+}
+
+.team11-container {
+    grid-column: 5;
+    grid-row: 5;
+}
+
+.team12-container {
+    grid-column: 6;
+    grid-row: 5;
+}
+
+
+/* Tournament Planning Page */
+#bracket-img {
+    margin-left: 25%;
+    margin-top: 20px;
+    width: 800px;
+}
+
+
+/* Tournament Register Page */
+.tournament-register-body {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 60px 40px 10px 1fr 1fr;
+}
+
+.reg-container1 {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.reg-container2 {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.rankSelect {
+    width: 170px;
+}
+
+#commentBox {
+    height: 70px;
+    width: 250px;
+}
+
+#avCheck {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.btnVerzenden {
+    background-color: gray;
+    color: white;
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+}
+
+#btnVerzenden:hover {
+    background-color: rgb(52, 52, 52);
+}
+
+
+/* Contact Page */
+.contact-body {
+    display: grid;
+    grid-template-columns: 200px repeat(3, 1fr) 200px;
+    grid-template-rows: 60px 40px 10px 1fr;
+}
+
+.contact-container {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.contact-container2 {
+    grid-column: 5;
+    grid-row: 4;
+    margin-top: 10%;
+}
+
+.reasonSelect {
+    width: 170px;
+}
+
+/* FAQ Page */
+.faq-body {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 60px 40px 10px 20px 30px 1fr;
+}
+
+.faq-header {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.faq-container {
+    grid-column: 2;
+    grid-row: 6;
+    display: flex;
+    flex-direction: column;
+}
+
+.questionBtn {
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: left;
+    background-color: lightgray;
+    border-radius: 20px;
+}
+
+#q1, #q2, #q3, #q4 {
+    margin-left: 10px;
+}
+
+
+/* Register Success Pagina */
+.register-success-body {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 60px 40px 10px 1fr;
+}
+
+.register-success-container {
+    grid-column: 2;
+    grid-row: 4;
+    text-align: center;
+}
